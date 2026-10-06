@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NISHA P | AI & Data Science Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Nisha P - B.Tech Artificial Intelligence and Data Science student. Skills in Python, SQL, Linux, Machine Learning, Cloud Computing, and Web Technologies.">
+    <meta name="keywords" content="Nisha P, AI, Data Science, Python, SQL, Linux, Machine Learning, Cloud Computing, Portfolio">
+    <meta name="author" content="NISHA P">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Reading Progress Bar -->
+    <div id="scroll-progress" class="scroll-progress-bar" aria-hidden="true"></div>
+
+    <!-- Ambient Glow Background -->
+    <div class="ambient-glow glow-1" aria-hidden="true"></div>
+    <div class="ambient-glow glow-2" aria-hidden="true"></div>
+    <div class="ambient-glow glow-3" aria-hidden="true"></div>
+    <div class="grid-overlay" aria-hidden="true"></div>
+
+    <!-- Navigation Bar -->
+    <header id="navbar">
+        <div class="container nav-container">
+            <!-- Brand Logo -->
+            <a href="#hero" class="nav-brand" aria-label="NISHA P Homepage">
+                <div class="brand-badge">N</div>
+                <div class="brand-text">
+                    <span class="brand-name">NISHA P</span>
+                    <span class="brand-title">AI & Data Science</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav class="nav-menu-desktop" aria-label="Main Navigation">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Nav Actions -->
+            <div class="nav-actions">
+                <a href="https://github.com/Nisha4527-ux" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub
+                </a>
+                <a href="Nisha_Resume.pdf" target="_blank" download="Nisha_P_Resume.pdf" class="btn btn-primary btn-sm">
+                    <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    Resume
+                </a>
+                <!-- Mobile Toggle Button -->
+                <button id="mobile-menu-toggle" class="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <svg id="hamburger-icon" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+                    <svg id="close-icon" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display:none;"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu-drawer" class="mobile-menu-drawer">
+            <a href="#hero" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#education" class="mobile-nav-link">Education</a>
+            <a href="#certifications" class="mobile-nav-link">Certifications</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+            <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: 8px;">
+                <a href="Nisha_Resume.pdf" target="_blank" download="Nisha_P_Resume.pdf" class="btn btn-primary" style="justify-content: center;">Download Resume (PDF)</a>
+                <a href="https://github.com/Nisha4527-ux" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="justify-content: center;">GitHub Profile (@Nisha4527-ux)</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================== HERO SECTION ==================== -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="section-badge">
+                        <span>●</span> B.Tech Artificial Intelligence and Data Science
+                    </div>
+
+                    <h1 class="hero-headline">
+                        Hi, I'm <span class="text-gradient">NISHA P</span>
+                    </h1>
+
+                    <p class="hero-subhead">
+                        B.Tech Artificial Intelligence and Data Science student with skills in <strong>Python, SQL, Linux, and web technologies</strong>. Hands-on experience through internships and projects in <strong>Cloud Computing, IoT, and data analytics</strong>. Passionate about developing practical, industry-ready technology solutions.
+                    </p>
+
+                    <!-- Key Stat Row -->
+                    <div class="hero-stats-row">
+                        <div class="hero-stat-item">
+                            <span class="hero-stat-number">8.5</span>
+                            <span class="hero-stat-label">B.Tech CGPA</span>
+                        </div>
+                        <div class="hero-stat-item">
+                            <span class="hero-stat-number">2</span>
+                            <span class="hero-stat-label">Internships</span>
+                        </div>
+                        <div class="hero-stat-item">
+                            <span class="hero-stat-number">SIH 2026</span>
+                            <span class="hero-stat-label">AI/ML Hackathon</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </a>
+                        <a href="Nisha_Resume.pdf" target="_blank" download="Nisha_P_Resume.pdf" class="btn btn-outline">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                            <span>Download Resume</span>
+                        </a>
+                    </div>
+
+                    <!-- Social links -->
+                    <div class="hero-social-links">
+                        <span>Links:</span>
+                        <a href="https://github.com/Nisha4527-ux" target="_blank" rel="noopener noreferrer">
+                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/nisha-paramasivam-4732a2303/" target="_blank" rel="noopener noreferrer">
+                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="mailto:nishasivam4527@gmail.com">
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            Email
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Code Terminal Box -->
+                <div class="terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <span class="terminal-title">nisha_profile.py</span>
+                        <span class="terminal-title">Python 3.11</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="code-comment"># Official Resume Profile</p>
+                        <p><span class="code-keyword">class</span> <span class="code-class">DeveloperProfile</span>:</p>
+                        <div style="padding-left: 18px;">
+                            <p><span class="code-var">name</span> = <span class="code-str">"NISHA P"</span></p>
+                            <p><span class="code-var">degree</span> = <span class="code-str">"B.Tech AI & Data Science"</span></p>
+                            <p><span class="code-var">institution</span> = <span class="code-str">"VSB College of Engg, CBE"</span></p>
+                            <p><span class="code-var">cgpa</span> = <span class="code-num">8.5</span></p>
+                            <p><span class="code-var">skills</span> = [</p>
+                            <div style="padding-left: 18px;">
+                                <p><span class="code-str">"Python"</span>, <span class="code-str">"SQL"</span>, <span class="code-str">"Linux"</span>,</p>
+                                <p><span class="code-str">"Machine Learning"</span>, <span class="code-str">"HTML"</span>,</p>
+                                <p><span class="code-str">"CSS"</span>, <span class="code-str">"Javascript"</span></p>
+                            </div>
+                            <p>]</p>
+                            <p><span class="code-var">languages</span> = [<span class="code-str">"English"</span>, <span class="code-str">"Tamil"</span>]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TECH MARQUEE ==================== -->
+        <div class="marquee-wrapper" aria-label="Key Technologies">
+            <div class="marquee-track">
+                <div class="marquee-item"><span class="marquee-dot"></span> Python</div>
+                <div class="marquee-item"><span class="marquee-dot"></span> SQL</div>
+                <div class="marquee-item"><span class="marquee-dot"></span> Linux</div>
+                <div class="marquee-item"><span class="marquee-dot"></span> Machine Learning</div>
+                <div class="marquee-item"><span class="marquee-dot"></span> HTML</div>
+                <div class="marquee-item"><span class="marquee-dot"></span> CSS</div>
+                <div class="marquee-item"><span class="marquee-dot"></span> Javascript</div>
+                <div class="marquee-item"><span class="marquee-dot"></span> Cloud Computing</div>
+                <div class="marquee-item"><span class="marquee-dot"></span> IoT & Flask</div>
+                <div class="marquee-item"><span class="marquee-dot"></span> SQLite</div>
+                <!-- Repeat for continuous scroll -->
+                <div class="marquee-item"><span class="marquee-dot"></span> Python</div>
+                <div class="marquee-item"><span class="marquee-dot"></span> SQL</div>
+                <div class="marquee-item"><span class="marquee-dot"></span> Linux</div>
+                <div class="marquee-item"><span class="marquee-dot"></span> Machine Learning</div>
+                <div class="marquee-item"><span class="marquee-dot"></span> HTML</div>
+                <div class="marquee-item"><span class="marquee-dot"></span> CSS</div>
+                <div class="marquee-item"><span class="marquee-dot"></span> Javascript</div>
+                <div class="marquee-item"><span class="marquee-dot"></span> Cloud Computing</div>
+            </div>
+        </div>
+
+        <!-- ==================== ABOUT SECTION ==================== -->
+        <section id="about">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">ABOUT ME</div>
+                    <h2 class="section-heading">Professional Overview</h2>
+                    <p class="section-subheading">A summary of my background, focus areas, and language proficiencies based on my resume.</p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- About Card 1 -->
+                    <div class="glass-card about-card">
+                        <div>
+                            <div class="about-card-icon cyan">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                            </div>
+                            <h3>AI & Data Science</h3>
+                            <p>B.Tech student specializing in Artificial Intelligence, Machine Learning algorithms, Python programming, and structured relational querying with SQL.</p>
+                        </div>
+                        <div class="about-card-footer">
+                            Python • SQL • Machine Learning
+                        </div>
+                    </div>
+
+                    <!-- About Card 2 -->
+                    <div class="glass-card about-card">
+                        <div>
+                            <div class="about-card-icon indigo">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+                            </div>
+                            <h3>Cloud Computing & IoT</h3>
+                            <p>Hands-on exposure through internship at Codec IT Solutions and practical architecture projects combining Flask, SQLite, and IoT telemetry.</p>
+                        </div>
+                        <div class="about-card-footer">
+                            Cloud Concepts • IoT • Linux
+                        </div>
+                    </div>
+
+                    <!-- About Card 3 -->
+                    <div class="glass-card about-card">
+                        <div>
+                            <div class="about-card-icon emerald">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+                            </div>
+                            <h3>Web & Spoken Languages</h3>
+                            <p>Web development internship at CodeBind Technologies building responsive web pages with HTML, CSS, and JavaScript. Fluent in English and Tamil.</p>
+                        </div>
+                        <div class="about-card-footer">
+                            HTML/CSS/JS • English & Tamil
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SKILLS SECTION ==================== -->
+        <section id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">TECHNICAL EXPERTISE</div>
+                    <h2 class="section-heading">Skills & Technologies</h2>
+                    <p class="section-subheading">Technical skills and spoken languages explicitly listed in my official resume.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Group 1: Programming Languages -->
+                    <div class="glass-card skill-category-card">
+                        <div class="skill-cat-header">
+                            <span class="skill-cat-number">01.</span>
+                            <h3 class="skill-cat-title">Programming</h3>
+                        </div>
+                        <div class="skill-items-list">
+                            <div class="skill-pill-item">
+                                <span>Python</span>
+                                <span class="skill-tag-badge">Core</span>
+                            </div>
+                            <div class="skill-pill-item">
+                                <span>SQL</span>
+                                <span class="skill-tag-badge">Queries</span>
+                            </div>
+                            <div class="skill-pill-item">
+                                <span>Javascript</span>
+                                <span class="skill-tag-badge">Web</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group 2: AI & Data Science -->
+                    <div class="glass-card skill-category-card">
+                        <div class="skill-cat-header">
+                            <span class="skill-cat-number">02.</span>
+                            <h3 class="skill-cat-title">AI & Analytics</h3>
+                        </div>
+                        <div class="skill-items-list">
+                            <div class="skill-pill-item">
+                                <span>Machine Learning</span>
+                                <span class="skill-tag-badge">Models</span>
+                            </div>
+                            <div class="skill-pill-item">
+                                <span>Data Analytics</span>
+                                <span class="skill-tag-badge">Insights</span>
+                            </div>
+                            <div class="skill-pill-item">
+                                <span>SQLite</span>
+                                <span class="skill-tag-badge">Database</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group 3: Web Technologies -->
+                    <div class="glass-card skill-category-card">
+                        <div class="skill-cat-header">
+                            <span class="skill-cat-number">03.</span>
+                            <h3 class="skill-cat-title">Web Technologies</h3>
+                        </div>
+                        <div class="skill-items-list">
+                            <div class="skill-pill-item">
+                                <span>HTML</span>
+                                <span class="skill-tag-badge">Markup</span>
+                            </div>
+                            <div class="skill-pill-item">
+                                <span>CSS</span>
+                                <span class="skill-tag-badge">Styling</span>
+                            </div>
+                            <div class="skill-pill-item">
+                                <span>Flask</span>
+                                <span class="skill-tag-badge">Backend</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group 4: Systems & Languages -->
+                    <div class="glass-card skill-category-card">
+                        <div class="skill-cat-header">
+                            <span class="skill-cat-number">04.</span>
+                            <h3 class="skill-cat-title">Systems & Spoken</h3>
+                        </div>
+                        <div class="skill-items-list">
+                            <div class="skill-pill-item">
+                                <span>Linux</span>
+                                <span class="skill-tag-badge">OS / CLI</span>
+                            </div>
+                            <div class="skill-pill-item">
+                                <span>English</span>
+                                <span class="skill-tag-badge">Fluent</span>
+                            </div>
+                            <div class="skill-pill-item">
+                                <span>Tamil</span>
+                                <span class="skill-tag-badge">Native</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROJECTS SECTION ==================== -->
+        <section id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">FEATURED WORK</div>
+                    <h2 class="section-heading">Projects & Repositories</h2>
+                    <p class="section-subheading">Practical applications and project architectures built using Python, SQLite, Flask, and Machine Learning.</p>
+                </div>
+
+                <div class="projects-grid" id="projects-grid-container">
+                    <!-- Project 1: Expenses Tracker (Public Repo) -->
+                    <article class="glass-card project-card">
+                        <div class="project-card-banner">
+                            <div class="project-banner-tags">
+                                <span class="project-pill">Analytics & Full-Stack</span>
+                                <span class="project-status-tag">Public Repository</span>
+                            </div>
+                            <div class="project-banner-center">
+                                <div class="project-icon-box">
+                                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                </div>
+                            </div>
+                            <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:0.75rem; color:var(--text-secondary);">
+                                <span>Python & SQLite</span>
+                                <span>Financial Tracking</span>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <div>
+                                <h3>Expenses Tracker & Analytics</h3>
+                                <p>Developed an Expenses Tracker & Analytics project using Python and SQLite for financial tracking, expenditure categorization, and analytics.</p>
+                                <div class="project-tech-tags">
+                                    <span class="tech-pill">Python</span>
+                                    <span class="tech-pill">SQLite</span>
+                                    <span class="tech-pill">Analytics</span>
+                                    <span class="tech-pill">HTML/CSS/JS</span>
+                                </div>
+                            </div>
+                            <div class="project-card-actions">
+                                <button class="btn btn-secondary btn-sm modal-trigger" data-modal="expenses-tracker">View Details</button>
+                                <a href="https://github.com/Nisha4527-ux/Expenses_Tracker" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <span>GitHub Repo</span>
+                                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Secure Cloud-IoT Architecture -->
+                    <article class="glass-card project-card">
+                        <div class="project-card-banner indigo">
+                            <div class="project-banner-tags">
+                                <span class="project-pill" style="color:var(--accent-indigo);">Cloud & IoT</span>
+                                <span class="project-status-tag" style="color:var(--accent-indigo);">Architecture</span>
+                            </div>
+                            <div class="project-banner-center">
+                                <div class="project-icon-box" style="color:var(--accent-indigo);">
+                                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+                                </div>
+                            </div>
+                            <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:0.75rem; color:var(--text-secondary);">
+                                <span>Flask Backend</span>
+                                <span>IoT Telemetry</span>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <div>
+                                <h3>Secure Cloud–IoT Architecture</h3>
+                                <p>Built a Secure Cloud–IoT Architecture project with Flask and SQLite to securely capture device telemetry and store relational data logs.</p>
+                                <div class="project-tech-tags">
+                                    <span class="tech-pill">Flask</span>
+                                    <span class="tech-pill">SQLite</span>
+                                    <span class="tech-pill">Cloud Concepts</span>
+                                    <span class="tech-pill">IoT</span>
+                                </div>
+                            </div>
+                            <div class="project-card-actions">
+                                <button class="btn btn-secondary btn-sm modal-trigger" data-modal="secure-cloud-iot">View Details</button>
+                                <a href="https://github.com/Nisha4527-ux" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <span>GitHub Profile</span>
+                                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Smart India Hackathon (SIH) 2026 -->
+                    <article class="glass-card project-card">
+                        <div class="project-card-banner emerald">
+                            <div class="project-banner-tags">
+                                <span class="project-pill" style="color:var(--accent-emerald);">AI / ML Solution</span>
+                                <span class="project-status-tag">SIH 2026</span>
+                            </div>
+                            <div class="project-banner-center">
+                                <div class="project-icon-box" style="color:var(--accent-emerald);">
+                                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                </div>
+                            </div>
+                            <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:0.75rem; color:var(--text-secondary);">
+                                <span>Hackathon Project</span>
+                                <span>AI/ML Engine</span>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <div>
+                                <h3>Smart India Hackathon 2026 Solution</h3>
+                                <p>Participated in Smart India Hackathon (SIH) 2026 with an AI/ML-based solution to solve real-world industry problem challenges.</p>
+                                <div class="project-tech-tags">
+                                    <span class="tech-pill">Python</span>
+                                    <span class="tech-pill">Machine Learning</span>
+                                    <span class="tech-pill">Data Analytics</span>
+                                </div>
+                            </div>
+                            <div class="project-card-actions">
+                                <button class="btn btn-secondary btn-sm modal-trigger" data-modal="sih-hackathon">View Details</button>
+                                <a href="https://github.com/Nisha4527-ux" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                                    <span>GitHub Profile</span>
+                                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== EDUCATION SECTION ==================== -->
+        <section id="education">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">ACADEMIC BACKGROUND</div>
+                    <h2 class="section-heading">Education</h2>
+                    <p class="section-subheading">Degree details and academic performance from my official resume.</p>
+                </div>
+
+                <div class="glass-card education-box">
+                    <div class="edu-top-row">
+                        <div>
+                            <span class="edu-location">Coimbatore, Tamil Nadu, India</span>
+                            <h3 class="edu-college">VSB College of Engineering Technical Campus, Coimbatore</h3>
+                            <p class="edu-degree">B.Tech - Artificial Intelligence and Data Science</p>
+                        </div>
+                        <span class="edu-cgpa-pill">CGPA: 8.5</span>
+                    </div>
+                    <p class="edu-desc">
+                        Comprehensive curriculum covering Artificial Intelligence, Machine Learning algorithms, Database Management Systems (SQL), Linux operating systems, and full-stack web technologies.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CERTIFICATIONS & INTERNSHIPS ==================== -->
+        <section id="certifications">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">EXPERIENCE & ACHIEVEMENTS</div>
+                    <h2 class="section-heading">Internships & Accomplishments</h2>
+                    <p class="section-subheading">Completed industry internships, hackathon participation, and technical milestones.</p>
+                </div>
+
+                <!-- Internships Grid -->
+                <div class="internships-grid" style="margin-bottom: 36px;">
+                    <!-- Internship 1 -->
+                    <div class="glass-card internship-card">
+                        <div>
+                            <div class="internship-header">
+                                <div>
+                                    <span class="internship-company">Codec IT Solutions</span>
+                                    <h3 class="internship-title">Cloud Computing Intern</h3>
+                                </div>
+                                <span class="internship-badge">Completed</span>
+                            </div>
+                            <ul class="internship-points">
+                                <li>
+                                    <span class="bullet">▹</span>
+                                    <span>Learned cloud computing concepts and their practical applications.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet">▹</span>
+                                    <span>Gained hands-on exposure to cloud technologies and cloud-based environments.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="internship-footer">
+                            Focus: Cloud Concepts &bull; Cloud Environments
+                        </div>
+                    </div>
+
+                    <!-- Internship 2 -->
+                    <div class="glass-card internship-card">
+                        <div>
+                            <div class="internship-header">
+                                <div>
+                                    <span class="internship-company">CodeBind Technologies</span>
+                                    <h3 class="internship-title">Web Development Intern</h3>
+                                </div>
+                                <span class="internship-badge">Completed</span>
+                            </div>
+                            <ul class="internship-points">
+                                <li>
+                                    <span class="bullet">▹</span>
+                                    <span>Completed internship focused on HTML, CSS, and JavaScript.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet">▹</span>
+                                    <span>Gained practical experience in building responsive and user-friendly web pages.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet">▹</span>
+                                    <span>Worked on front-end development tasks and improved UI/UX implementation skills.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="internship-footer">
+                            Focus: HTML &bull; CSS &bull; JavaScript &bull; Responsive UI/UX
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accomplishments Grid -->
+                <h3 style="font-size: 1.25rem; margin-bottom: 16px; color: #fff;">Verified Accomplishments</h3>
+                <div class="accomplishments-grid">
+                    <div class="glass-card accomplishment-card">
+                        <div class="accomplishment-icon">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div class="accomplishment-text">
+                            <h4>Internships in Cloud Computing and Web Development</h4>
+                            <p>Completed practical industry internships at Codec IT Solutions and CodeBind Technologies.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card accomplishment-card">
+                        <div class="accomplishment-icon">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div class="accomplishment-text">
+                            <h4>Expenses Tracker & Analytics Project</h4>
+                            <p>Developed an Expenses Tracker & Analytics project using Python and SQLite.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card accomplishment-card">
+                        <div class="accomplishment-icon">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div class="accomplishment-text">
+                            <h4>Secure Cloud–IoT Architecture Project</h4>
+                            <p>Built a Secure Cloud–IoT Architecture project with Flask and SQLite.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card accomplishment-card">
+                        <div class="accomplishment-icon">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div class="accomplishment-text">
+                            <h4>Smart India Hackathon (SIH) 2026</h4>
+                            <p>Participated in Smart India Hackathon (SIH) 2026 with an AI/ML-based solution.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT SECTION ==================== -->
+        <section id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">GET IN TOUCH</div>
+                    <h2 class="section-heading">Contact Information</h2>
+                    <p class="section-subheading">Feel free to reach out directly via email, phone, or LinkedIn for internship opportunities.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Contact Details -->
+                    <div class="glass-card contact-info-panel">
+                        <h3 style="font-size: 1.25rem;">Direct Contact Details</h3>
+
+                        <!-- Email Box -->
+                        <div class="contact-item-box">
+                            <div class="contact-item-left">
+                                <div class="contact-icon">
+                                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                                </div>
+                                <div class="contact-item-info">
+                                    <span>Email Address</span>
+                                    <strong id="email-address">nishasivam4527@gmail.com</strong>
+                                </div>
+                            </div>
+                            <button id="copy-email-btn" class="copy-btn" title="Copy Email">
+                                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                            </button>
+                        </div>
+
+                        <!-- Phone Box -->
+                        <div class="contact-item-box">
+                            <div class="contact-item-left">
+                                <div class="contact-icon" style="color:var(--accent-emerald); background:rgba(16,185,129,0.12);">
+                                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                                </div>
+                                <div class="contact-item-info">
+                                    <span>Phone Number</span>
+                                    <strong>+91 9677908508</strong>
+                                </div>
+                            </div>
+                            <a href="tel:+919677908508" class="copy-btn" title="Call Now">
+                                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                            </a>
+                        </div>
+
+                        <!-- Location Box -->
+                        <div class="contact-item-box">
+                            <div class="contact-item-left">
+                                <div class="contact-icon" style="color:var(--accent-indigo); background:rgba(99,102,241,0.12);">
+                                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                </div>
+                                <div class="contact-item-info">
+                                    <span>Location</span>
+                                    <strong>Coimbatore, Tamil Nadu, India</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Grid -->
+                        <div class="contact-social-grid">
+                            <a href="https://www.linkedin.com/in/nisha-paramasivam-4732a2303/" target="_blank" rel="noopener noreferrer" class="contact-social-card">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                <span>LinkedIn Profile</span>
+                            </a>
+                            <a href="https://github.com/Nisha4527-ux" target="_blank" rel="noopener noreferrer" class="contact-social-card">
+                                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                <span>GitHub Profile</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Message Form -->
+                    <div class="glass-card contact-form-panel">
+                        <h3 style="font-size: 1.25rem; margin-bottom: 6px;">Send a Direct Message</h3>
+                        <p style="font-size: 0.88rem; margin-bottom: 24px;">Send a message directly for internship inquiries or project collaborations.</p>
+
+                        <form id="contact-form" novalidate>
+                            <div class="form-row-2">
+                                <div class="form-group">
+                                    <label for="name">Your Name *</label>
+                                    <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required>
+                                    <span class="error-msg">Please enter your name.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Your Email *</label>
+                                    <input type="email" id="email" name="email" class="form-input" placeholder="alex@company.com" required>
+                                    <span class="error-msg">Please enter a valid email.</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" class="form-input" placeholder="Internship Opportunity / Inquiry" required>
+                                <span class="error-msg">Please enter a subject.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="4" class="form-input" style="resize:vertical;" placeholder="Hello Nisha, I came across your portfolio..." required></textarea>
+                                <span class="error-msg">Please enter your message.</span>
+                            </div>
+
+                            <button type="submit" id="submit-btn" class="btn btn-primary" style="width: 100%;">
+                                <span id="submit-text">Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="brand-badge" style="width:32px; height:32px; font-size:0.9rem;">N</div>
+                <div>
+                    <strong style="color:#fff; font-size:0.9rem;">NISHA P</strong>
+                    <p style="font-size:0.75rem; color:var(--text-muted);">&copy; <span id="current-year">2026</span> All rights reserved.</p>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+                <a href="#hero" class="back-to-top">
+                    <span>Back to top ↑</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== PROJECT DETAILS MODAL ==================== -->
+    <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modal-title" style="font-size:1.1rem; color:#fff;">Project Details</h3>
+                <button id="modal-close" class="modal-close-btn" aria-label="Close modal">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+            </div>
+            <div id="modal-body" class="modal-body">
+                <!-- Populated dynamically via JS -->
+            </div>
+            <div class="modal-footer">
+                <button id="modal-dismiss-btn" class="btn btn-secondary btn-sm">Close</button>
+                <a id="modal-repo-btn" href="https://github.com/Nisha4527-ux" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View on GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast-container" role="alert" aria-live="assertive">
+        <svg width="18" height="18" fill="none" stroke="var(--accent-emerald)" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+        <span id="toast-message" style="font-size:0.85rem; color:#fff;">Message sent successfully!</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
